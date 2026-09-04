@@ -24,8 +24,9 @@ npx skills add ClickPM/skills-hub --skill <name>
 | `wiki-lint` | 体检已编译的 OKF 包:一致性、新鲜度、覆盖度、缺口分析 | 自建 |
 | `wiki-query` | 拿已编译的 OKF 包当结构化上下文回答问题 | 自建 |
 | `text-tools` | 词频统计与 JSON 格式化两个小脚本,只依赖 Python 标准库;从 stdin 收一个 JSON 对象、结果写 stdout | 自建 |
+| `web-fetch` | 读一个公网 https 网页,抽取正文为 markdown(标题、站点、日期、正文与链接);只依赖 trafilatura,自己做地址校验并钉 IP 连 | 自建 |
 
-`text-tools` 目录里的 `xray.json` 是给 [Agent X-Ray](https://www.kzgai.cloud/) 的沙箱执行清单(声明脚本的出网档次与入参 schema),本地当普通 skill 用时可以忽略它。
+`text-tools` 与 `web-fetch` 目录里的 `xray.json` 是给 [Agent X-Ray](https://www.kzgai.cloud/) 的沙箱执行清单(声明脚本的出网档次与入参 schema),本地当普通 skill 用时可以忽略它。
 
 ## 上游
 
